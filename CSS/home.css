@@ -1,0 +1,239 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*........ loading page ...............*/
+.loading {
+	background-color: #666;
+}
+
+.loading .loading-container {
+	display: block;	
+  	border: 5px solid #555; 
+ 	border-top: 5px solid #f5f5f5; 
+ 	border-radius: 100%;
+  	width: 12rem;
+  	height: 12rem;
+  	animation: spin 3s linear infinite;  	
+  	margin: 15% auto;
+  	position: relative;
+}
+
+/*.loading .loading-container .load-text {
+	position: absolute;
+	font-size: 3rem;
+	top: 50em;
+	left: 30em;	
+}*/
+
+
+.loading .container {
+	display: none;
+}
+
+.loaded .loading-container {
+	display: none;
+}
+
+.loaded .container {
+	display: block;
+}
+
+
+@keyframes spin {
+	100% {
+  		transform: rotate(360deg); 
+  	}
+}
+
+/*....header...................*/
+
+.main-header .main-navbar {
+	width: 100%;
+	height: 150px;
+	background-color: #e3e3e3;
+	display: flex;	
+	justify-content: center;
+	line-height: 150px;
+	position: relative;
+}
+
+.main-header .main-navbar h1 {
+	padding-left: 4rem;
+}
+
+.main-header .main-navbar .navbar .navbar-list {
+	/*justify-content: flex-end;*/
+	padding-left: 20rem;
+
+}
+.main-header .main-navbar .navbar .navbar-list li {
+	list-style-type: none;
+	display: inline;
+	padding: 2rem;
+	font-size: 1.5em;	
+}
+
+.main-header .main-navbar .navbar .navbar-list li a {
+	color: black;
+	text-decoration: none;
+}
+
+.main-header .main-navbar .navbar .navbar-list li a:hover {
+	color: #ffd700;
+}
+
+/*.........body.....................*/
+
+.container {
+	margin-top: 2rem;
+	
+}
+
+.container .corona-cases section {
+	margin: 30px;
+
+}
+.container .corona-cases .myanmar-corona h2,
+.container .corona-cases .worldwide-corona h2 {
+
+	position: relative;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .3);	
+	height: 70px;
+	border-radius: 10px;
+	margin: auto 1rem;
+	line-height: 70px;
+}
+
+.container .corona-cases .survey-list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: auto;
+}
+
+.container .corona-cases .survey-list li {
+	flex-grow: 1;
+	list-style-type: none;
+	width: 20%;
+	height: 100px;
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+	margin: 20px;
+	padding: 20px;
+	align-items: center;
+	transition: transform .5s;
+}
+
+.container .corona-cases .survey-list .total-cases,
+.container .corona-cases .survey-list .new-cases {
+	border: 2px solid #ffd700;
+	border-radius: 10px;
+}
+
+.container .corona-cases .survey-list .total-death {
+	border: 2px solid #dc143c;
+	border-radius: 10px;
+}
+
+.container .corona-cases .survey-list .recover-cases {
+	border: 2px solid #28a745;
+	border-radius: 10px;
+}
+
+.container .corona-cases .survey-list .critical-cases {
+	border: 2px solid #6c757d;
+	border-radius: 10px;
+}
+
+.container .corona-cases .survey-list .active-cases {
+	border: 2px solid #40e0d0;
+	border-radius: 10px;
+}
+
+.container .corona-cases .survey-list li:hover {
+	transform: scale(1.1);
+	color: white;
+
+}
+
+.container .corona-cases .survey-list .total-cases:hover ,
+.container .corona-cases .survey-list .new-cases:hover {
+	background-color: #ffd700;
+}
+
+
+.container .corona-cases .survey-list .total-death:hover {
+	background-color: #d6143c;	
+}
+
+.container .corona-cases .survey-list .recover-cases:hover {
+	background-color: #28a745;	
+}
+
+.container .corona-cases .survey-list .critical-cases:hover {
+	background-color: #6c757d;	
+}
+
+.container .corona-cases .survey-list .active-cases:hover {	 
+	background-color: #40e0d0;	
+}
+
+.alert {
+	position: relative;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .3);	
+	border-radius: 8px;
+	padding: 1rem;
+	font-size: 1.5em;
+	margin: auto 3rem;
+}
+/*.....main body......*/
+
+.container .home-main-body {
+	margin-top: 2rem;
+	background: #e3e3e3;
+	width: 100%;
+}
+
+.cotainer .home-main-body h2 {
+	text-align: center;
+}
+
+.container .home-main-body .search-box {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 1.5rem;
+	margin-right: .5rem;
+} 
+
+.container .home-main-body .search-box input {
+	padding: .5rem;
+	width: 30%;
+	font-size: 1em;
+
+}
+
+.container .home-main-body .search-box button {
+	background-color: #e3e3e3;
+	width: 5%;
+	font-size: 1em;
+}
+
+.container .home-main-body .corona-data {
+	margin-top: 1.5rem;
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+}
+
+.container table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 1rem;
+	margin: .5rem;
+	text-align: center;
+} 
